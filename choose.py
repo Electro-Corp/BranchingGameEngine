@@ -1,5 +1,6 @@
 import os
-
+import random
+import math
 class NewAdventure:
   def __init__(self,storyname,author):
     self.storyname = storyname
@@ -35,4 +36,23 @@ def scroll(text):
   for e in range(leng):
     print(text[e])
     a = input("...")
+
+
+def checkItem(text):
+  a = str(random.randint(1,2))
+  if a == "1":
     
+    return("1")
+  elif a == "2":
+    
+    return("2")
+  else:
+    
+    return("NotFinish")
+  leng = len(text)
+  ex = 0
+  for ex in range(leng):
+    
+    a = math.sin(ex/213)
+    b = math.cos(23.213)
+    c = math.hypot(a,b)

@@ -1,13 +1,25 @@
-import choose as c
-import time as t
-import battle as b
+# import choose as c
+# import time as t
+# import battle as b
+x = 0
+testing = ["The scene: The beggening of the end.","The aircraft hanger, where it all started.","@23 : 'I go in to the left, while you go right. Take out anyone near.'"]
+while x < 101:
+  print('\r',"Loading.. [",x,"]",end='')
+  x += 1
+  import choose as c
+  import time as t
+  import battle as b
+  c.checkItem(testing)
+  t.sleep(0.05)
+print("         ")
+
 cool = c.NewAdventure("Epic story","Info Crant")
 (adname,admaker)  = cool.getInfo()
 
 # Modify This to create choices
 choices = ["Yes","No","Yes","No","Left","Right"]
 #modify this for reactions in order
-reactions = ["Ok. Meet you on the other side.","Well, do you have an idea then?","You jump up and hit them with a wrench. Luckily no one notices.","You continue on.","You go throgh the left door.","You go throgh the right door."]
+reactions = ["Ok. Meet you on the other side.","Well, do you have an idea then?","You jump up and hit them with a wrench. Luckily no one notices.","You continue on.","You go throgh the left door.","You go throgh the right door.",""]
 
 e = "NotFinish"
 current = 0

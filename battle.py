@@ -51,7 +51,7 @@ def battle(HP,level,Monnam,playerhp,xp):
             re = "3"
         elif attack != 3 and re == "3":
             print("Attack is not READY!, SHOT AUTOMATICLY MISSED!")
-            dam = 0
+            dam = 3
         
         
         
@@ -59,10 +59,10 @@ def battle(HP,level,Monnam,playerhp,xp):
         
         
 
-        rand = random.randint(-3, 1)
+        rand = random.randint(-4, 1)
         print("You attack...")
         time.sleep(1)
-        if rand != 1 and dam != 0:
+        if rand == 1 and dam != 0:
             HP = (HP-(dam-rand))+(1.3*level)
             print(Monnam," Has ",HP)  
         else:
